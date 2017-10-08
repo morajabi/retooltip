@@ -45,7 +45,7 @@ class Retooltip extends PureComponent {
     const childrenProps = {
       isOpen,
 
-      getNodeProps: this.getNodeProps,
+      getTargetProps: this.getTargetProps,
       getTriggerButtonProps: this.getTriggerButtonProps,
       getTooltipProps: this.getTooltipProps,
     }
@@ -55,7 +55,7 @@ class Retooltip extends PureComponent {
 
   ////////// prop getters
 
-  getNodeProps = () => {
+  getTargetProps = () => {
     return {
       onMouseOver: this.onNodeMouseOver,
       onMouseLeave: this.onNodeMouseLeave,
