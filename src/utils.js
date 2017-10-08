@@ -8,3 +8,7 @@ let idCounter = 1
 function generateId(prefix) {
   return `${prefix}-${idCounter++}`
 }
+
+export {
+  generateId,
+}
