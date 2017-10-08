@@ -1,0 +1,14 @@
+{
+  "name": "retooltip",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "jsnext": "src/index.js",
+  "author": "Mohammad <hi@morajabi.me> (http://morajabi.me/)",
+  "license": "MIT",
+  "repository": "git@github.com:morajabi/retooltip.git",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "uuid": "^3.1.0"
+  }
+}
