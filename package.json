@@ -1,6 +1,6 @@
 {
   "name": "retooltip",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/retooltip.common.js",
   "module": "dist/retooltip.es.js",
   "jsnext:main": "dist/retooltip.es.js",

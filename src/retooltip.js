@@ -76,6 +76,10 @@ class Retooltip extends PureComponent {
   getTooltipProps = () => {
     const { isOpen } = this.state
     return {
+      // Keep the tooltip open
+      onMouseOver: this.onTooltipMouseOver,
+      onMouseUp: this.onTooltipMouseUp,
+
       id: this.tooltipId,
       role: 'tooltip',
       'aria-hidden': (!isOpen).toString(),
@@ -95,6 +99,14 @@ class Retooltip extends PureComponent {
 
   onTriggerButtonClick = () => {
     this.toggleTooltip()
+  }
+
+  onTooltipMouseOver = () => {
+    this.openTooltip()
+  }
+
+  onTooltipMouseUp = () => {
+    this.closeTooltip()
   }
 
   //\\\\\\\\ children event handlers
